@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farewell Batch 2021–2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #0f0f1a;
+      --accent: #00ffe7;
+      --bg: #0a0a0a;
+      --text: #ffffff;
+      --highlight: #00ffe7;
+      --card-bg: #1c1c2b;
+      --overlay: rgba(0, 0, 0, 0.7);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary);
+      gap: 40px;
+      min-height: 100vh;
+      padding: 80px 20px;
+      text-align: left;
+    }
+
+    .video-wrapper {
+      border-radius: 20px;
+      overflow: hidden;
+      max-width: 400px;
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    /* Headings and Paragraph Colors */
+    h1, h2 {
+      color:#00ffe7;
+    }
+
+    p {
+      color: #ffffff;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+    }
+
+    .hero-text p {
+      font-size: 1.3rem;
+      margin-top: 20px;
+    }
+
+    .memories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+    .memories img,
+    .memories video {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 28px;
+      background-color: var(--highlight);
+      color: var(--primary);
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00cca8;
+    }
+
+    .teacher-message {
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 30px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      padding: 80px 20px;
+      border-radius: 20px;
+    }
+
+    .teacher-message::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: var(--overlay);
+      border-radius: 20px;
+    }
+
+    .overlay {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 60px 30px;
+      border-radius: 12px;
+    }
+
+    .message-content h2 {
+      font-size: 2.6rem;
+    }
+
+    .message-content p {
+      font-size: 1.2rem;
+    }
+
+    .thankyou {
+      background-color: #00cca7a1;
+      padding: 60px 20px;
+      border-radius: 20px;
+    }
+
+    .thankyou h2 {
+      font-size: 2.5rem;
+    }
+
+    .thankyou p {
+
+      color:white;
+    }
+
+    .av-section {
+      background: #141421;
+    }
+
+    .av-section h2 {
+      font-size: 2.4rem;
+    }
+
+    .av-section video {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 12px;
+    }
+
+    footer {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--accent);
+    }
+
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-text p {
+        font-size: 1.1rem;
+      }
+
+      .message-content h2 {
+        font-size: 2rem;
+      }
+
+      .message-content p {
+        font-size: 1rem;
+      }
+
+      .teacher-message {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 40px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="section hero">
+    <div class="video-wrapper">
+      <video autoplay muted loop>
+        <source src="asset/video2.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-text">
+      <h1>Farewell to the Class of 2025</h1>
+      <p>Wishing you success, happiness, and fulfillment in all your future endeavors. Thank you for the inspiration and unforgettable memories.</p>
+    </div>
+    <div class="video-wrapper">
+      <video autoplay muted loop>
+        <source src="asset/video1.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+<!-- Summary Section -->
+<section class="section" style="background-color: #121222; color: #eaeaea; text-align: center;">
+  <h2 style="color: var(--highlight); margin-bottom: 20px;">A Journey to Remember</h2>
+  <p style="max-width: 850px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8;">
+    Across four transformative years, the Batch of 2021–2025 experienced milestones, made memories, and matured into future leaders. This farewell isn't just an end—it's a celebration of friendships, growth, and dreams taking flight. From laughter-filled classrooms to unforgettable events, each moment was a chapter in a story we'll always cherish. Here's to every smile, every step, and the road ahead.
+  </p>
+</section>
+
+  <!-- Memories Section -->
+  <section class="section roadmap">
+    <h2>Memories That Mattered</h2>
+    <div class="memories">
+      <img src="asset/grpA.jpg" alt="Memory Photo 1" />
+      <video controls muted><source src="asset/birth.mp4" type="video/mp4" /></video>
+      <video controls muted><source src="asset/pongal.mp4" type="video/mp4" /></video>
+    </div>
+    <a class="btn" href="farewellGallery.html">View Full Gallery</a>
+  </section>
+
+
+  <!-- Teacher Messages -->
+  <section class="teacher-message" style="background-image: url('asset/img1.jpg');">
+    <div class="overlay">
+      <div class="message-content">
+        <h2>Message from Your Teacher</h2>
+        <p>Watching you all grow into such talented individuals has been an honor. Keep learning, keep shining, and know that you are always part of this family.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="teacher-message" style="background-image: url('asset/img2.jpg');">
+    <div class="overlay">
+      <div class="message-content">
+        <h2>Message from Your Mentor</h2>
+        <p>As you move forward, carry the lessons and friendships from this chapter. The world is yours to explore. Be bold, be kind, and be brilliant.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thank You Section -->        
+  <section class="section thankyou">
+    <h2>With Heartfelt Gratitude</h2>
+    <p>Thank you for your energy, creativity, and memories. You'll always be missed and remembered with affection.</p>
+  </section>
+
+  <!-- AV Section -->
+  <section class="section av-section">
+    <h2>AV Presentation: Journey Through Time</h2>
+    <video controls>
+      <source src="asset/Untitled video - Made with Clipchamp.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Designed & Developed with ❤️ by Roobis<br/>
+    Batch 2021–2025 | All rights reserved ©
+  </footer>
+
+</body>
+</html>

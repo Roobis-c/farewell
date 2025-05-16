@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pinterest Style Gallery - Farewell</title>
+  <style>
+    :root {
+      --primary: #0f0f1a;
+      --accent: #00ffe7;
+      --bg: #0a0a0a;
+      --text: #f0f0f0;
+      --highlight: #ff4fbf;
+      --card-bg: #1c1c2b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--accent);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .masonry {
+      column-count: 4;
+      column-gap: 20px;
+      padding: 30px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .item {
+      break-inside: avoid;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px rgba(0, 255, 231, 0.4);
+    }
+
+    .item img,
+    .item video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+
+    video {
+      object-fit: cover;
+    }
+
+ 
+
+    @media (max-width: 1200px) {
+      .masonry {
+        column-count: 3;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .masonry {
+        column-count: 2;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .masonry {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Farewell Gallery</h1>
+    <p>Batch 2021–2025 Memories</p>
+  </header>
+
+  <section class="masonry">
+    <div class="item">
+      <img src="asset/iv.jpg" alt="Farewell 1">
+    </div>
+    <div class="item">
+      <img src="asset/img1.jpg" alt="Farewell 1">
+    </div>
+    <div class="item">
+      <video controls muted>
+        <source src="asset/birth.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="item">
+      <video controls muted>
+        <source src="asset/mithun.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="item">
+      <img src="asset/grpA.jpg" alt="Farewell 2">
+    </div>
+    <div class="item">
+      <img src="asset/akkas4.jpg" alt="Farewell 2">
+    </div>
+    <div class="item">
+      <video controls muted>
+        <source src="asset/dance.mp4" type="video/mp4" >
+      </video>
+    </div>
+    <div class="item">
+      <img src="asset/img2.jpg" alt="Farewell 3">
+    </div>
+    <div class="item">
+      <img src="asset/akkas3.jpg" alt="Farewell 3">
+    </div>
+    <div class="item">
+      <img src="asset/akkas2.jpg" alt="Farewell 3">
+    </div>
+    <div class="item">
+      <video controls muted>
+        <source src="asset/tvs.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="item">
+      <video controls>
+        <source src="asset/video2.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="item">
+      <img src="asset/akkas.jpg" alt="Farewell 5" height="400px">
+    </div>
+    <div class="item">
+      <img src="asset/gallery.jpg" alt="Farewell 4">
+    </div>
+    <div class="item">
+      <video controls>
+        <source src="asset/video1.mp4" type="video/mp4">
+      </video>
+      
+    </div>
+    
+   
+  </section>
+
+  <!-- <footer>
+    &copy; 2025 Farewell Batch | Designed with ♥ by Roobis
+  </footer> -->
+
+</body>
+</html>

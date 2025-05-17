@@ -85,21 +85,87 @@
       font-size: 1.3rem;
       margin-top: 20px;
     }
+    .memories-scattered {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
 
-    .memories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      max-width: 1200px;
-      margin: 40px auto;
-    }
+.memories-left {
+  flex: 1;
+  position: relative;
+  height: 350px;
+  min-width: 300px;
+}
 
-    .memories img,
-    .memories video {
-      width: 100%;
-      border-radius: 12px;
-      object-fit: cover;
-    }
+.photo-stack {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+}
+
+.photo {
+  position: absolute;
+  width: 250px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.photo1 {
+  top: 20px;
+  left: 30px;
+  transform: rotate(-12deg);
+}
+.photo2 {
+  top: 60px;
+  left: 80px;
+  transform: rotate(8deg);
+}
+.photo3 {
+  top: 100px;
+  left: 10px;
+  transform: rotate(4deg);
+}
+.photo4 {
+  top: 40px;
+  left: 120px;
+  transform: rotate(-6deg);
+}
+.photo5 {
+  top: 80px;
+  left: 60px;
+  transform: rotate(15deg);
+}
+
+.memories-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.memories-right h2 {
+  font-size: 32px;
+  color: #00ffe5;
+  margin-bottom: 16px;
+}
+
+.memories-right p {
+  font-size: 18px;
+  color: #ffffffcc;
+  line-height: 1.6;
+}
 
     .btn {
       display: inline-block;
@@ -243,16 +309,30 @@
     </p>
   </section>
 
-  <!-- Memories Section -->
-  <section class="section roadmap">
-    <h2>Moments That Mattered</h2>
-    <div class="memories">
-      <img src="asset/grpA.jpg" alt="Memory Photo 1" />
-      <video controls muted><source src="asset/birth.mp4" type="video/mp4" /></video>
-      <video controls muted><source src="asset/pongal.mp4" type="video/mp4" /></video>
+  <section class="memories-scattered">
+    <div class="memories-left">
+      <div class="photo-stack">
+        <img src="asset/img2.jpg" class="photo photo2" />
+        <img src="asset/akkas2.jpg" class="photo photo3" />
+        <img src="asset/akkas3.jpg" class="photo photo4" />
+        <img src="asset/akkas4.jpg" class="photo photo5" />
+        <img src="asset/img1.jpg" class="photo photo1" />
+
+      </div>
     </div>
-    <a class="btn" href="farewellGallery.html">Explore More Memories</a>
+    <div class="memories-right">
+      <h2>Memories</h2>
+      <p>
+        Moments that made us laugh, cry, and grow—each photo is a frozen frame of joy we shared. They overlap just like our lives did, creating a beautiful collage of unforgettable times.
+      </p>
+      <a class="btn" href="farewellGallery.html">Explore More Memories</a>
+
+    </div>
+
   </section>
+  
+  
+
 
   <!-- Guiding Voices -->
   <section class="teacher-message" style="background-image: url('asset/img1.jpg');">
